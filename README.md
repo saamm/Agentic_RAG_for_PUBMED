@@ -1,18 +1,25 @@
 # Agentic RAG for PubMed
 
-This project implements an Agentic Retrieval-Augmented Generation (RAG) system for biomedical literature mining.
+An Explainable Agentic Retrieval-Augmented Generation System for Biomedical Knowledge Discovery
+
+This project implements an open-source Agentic Retrieval-Augmented Generation (RAG) system for dynamically mining biomedical literature from PubMed, enabling explainable question answering for applications such as biomarker discovery and drug safety research.
 
 ## Features
-- PubMed retrieval
-- Vector search using FAISS
-- Local LLM reasoning (Mistral)
-- Agentic loop (search → retrieve → decide → answer)
-- Explainability using SHAP
+- User biomedical query →
+- PubMed search API →
+- dynamic PMIDs →
+- fetch abstracts →
+- chunk →
+- vectorstore →
+- agentic RAG →
+- answer + SHAP explanation
 
 ## Applications
-- Biomarker discovery
-- Cardiotoxicity monitoring
-- Drug safety research
+- any biomedical topic
+- real-time corpus construction
+- reproducible science
+- scalable literature mining
+- research-style pipeline
 
 ## Stack
 - Python
@@ -38,4 +45,7 @@ pip install -r requirements.txt
 python src/main.py
 ```
 
+## Next Steps
+1. Add caching so PubMed is not re-downloaded every run
+2. Add CLI interface: python main.py --query "cardiotoxicity biomarkers"
 
