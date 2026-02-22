@@ -20,3 +20,22 @@ This project implements an Agentic Retrieval-Augmented Generation (RAG) system f
 - FAISS
 - SentenceTransformers
 - SHAP
+
+## Setup
+
+1. Install Ollama and pull Mistral:
+```bash
+ollama pull mistral
+```
+
+2. Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+3. Run:
+```
+python src/main.py
+```
+
+
