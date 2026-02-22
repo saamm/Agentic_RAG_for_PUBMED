@@ -1,0 +1,11 @@
+biopython
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+tqdm
+ollama
+shap
+scikit-learn
+matplotlib
+jupyter
